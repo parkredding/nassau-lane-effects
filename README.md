@@ -60,6 +60,7 @@ The pedal features two distinct "Personalities" (Banks). The control surface fun
 | :--- | :--- | :--- | :--- |
 | **SW_BANK** | Toggle Banks (A/B) | **8** | **14** |
 | **SW_BYPASS**| Master Bypass | **10** | **15** |
+| **SW_SHIFT** | Shift (Hold) | **36** | **16** |
 
 #### Table C: Rotary Encoders (DT/CLK)
 *Note: Assumes 4-pin Breakout Modules (VCC, GND, CLK, DT).*
@@ -69,6 +70,13 @@ The pedal features two distinct "Personalities" (Banks). The control surface fun
 | **ENC_1** | Saturation / Tremolo | **Pin 1** | **Pin 9** | **GPIO 2** (Pin 3) | **GPIO 3** (Pin 5) |
 | **ENC_2** | Doubletrack / Reverb | **Pin 17** | **Pin 25** | **GPIO 4** (Pin 7) | **GPIO 5** (Pin 29) |
 | **ENC_3** | Lag / Decay | **Pin 1** | **Pin 39** | **GPIO 6** (Pin 31) | **GPIO 7** (Pin 26) |
+
+#### Table D: RGB LED (Assignable)
+| LED Channel | Function | Header Position | GPIO # (BCM) |
+| :--- | :--- | :--- | :--- |
+| **LED_R** | Red Channel | **11** | **17** |
+| **LED_G** | Green Channel | **13** | **27** |
+| **LED_B** | Blue Channel | **15** | **22** |
 
 ---
 

@@ -1,0 +1,15 @@
+[Unit]
+Description=Nassau Lane Effects Processor
+After=sound.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/nassau-lane
+ExecStart=/home/pi/nassau-lane/nassau_lane
+Restart=always
+RestartSec=1
+ExecStartPre=/bin/bash /home/pi/nassau-lane/scripts/gpio_init.sh
+
+[Install]
+WantedBy=multi-user.target
